@@ -13,7 +13,10 @@
 
 <body>
   <div class="container">
-    <h1 class="article-title ">Правила организации отступов: как сделать вёрстку гибкой и не допустить ошибок</h1>
+    <h1 class="article-title">
+      <strong>Правила организации отступов:</strong>
+      как сделать вёрстку гибкой и не допустить ошибок
+    </h1>
 
     <p class="paragraph">
       Вёрстка должна быть <strong>максимально гибкой</strong>. Даже если заказчик или работодатель говорит, что сайт статичный и не будет меняться, всё равно стоит делать  так, будто завтра добавят несколько блоков текста, несколько элементов или что-то ещё.
@@ -22,7 +25,7 @@
       Нужно точно знать, <i>как поведут себя блоки при вёрстке, что произойдёт при изменениях</i>. И здесь помогают правила организации отступов. Они позволяют   легко менять, улучшать и масштабировать вёрстку и уберегут вас от типичных ошибок.
     </p>
 
-    <div class="area-fill">
+    <div class="area-fill area-fill__img--dec1">
       <h2 class="article-subtitle">Содержание</h2>
 
       <p class="paragraph">
@@ -30,17 +33,17 @@
       </p>
 
       <ul class="sections-list">
-        <li class="sections-list__item">
-          <a href="#section_1">Основные принципы работы с отступами</a>
+        <li class="sections__item">
+          <a class="sections__link" href="#section_1">Основные принципы работы с отступами</a>
         </li>
-        <li class="sections-list__item">
-          <a href="#section_2">Первый принцип: отступы от предыдущего к следующему</a>
+        <li class="sections__item">
+          <a class="sections__link" href="#section_2">Первый принцип: отступы от предыдущего к следующему</a>
         </li>
-        <li class="sections-list__item">
-          <a href="#section_3">Второй принцип: отступы задаются только между соседями</a>
+        <li class="sections__item">
+          <a class="sections__link" href="#section_3">Второй принцип: отступы задаются только между соседями</a>
         </li>
-        <li class="sections-list__item">
-          <a href="#section_4">Третий принцип: у последнего элемента группы обнуляем отступ</a>
+        <li class="sections__item">
+          <a class="sections__link" href="#section_4">Третий принцип: у последнего элемента группы обнуляем отступ</a>
         </li>
       </ul>
     </div>
@@ -51,7 +54,7 @@
       <p class="paragraph">
         У любого сайта или документа есть так называемый поток — порядок вывода объектов в документе. В вёрстке этот поток идёт сверху вниз, слева направо. Именно поэтому, если какой-то элемент на макете находится справа, он должен в HTML-коде идти последним из своей группы.
       </p>
-      <p class="paragraph">Исходя из этого, можно сразу сформулировать первый принцип.</p>
+      <p class="paragraph text-emphasis">Исходя из этого, можно сразу сформулировать первый принцип.</p>
     </div>
 
     <div id="section_2">
@@ -63,7 +66,7 @@
 
       <figure class="article-figure">
         <img class="article-pic" src="img/1.jpg" alt="image_1">
-        <figcaption>
+        <figcaption class="article-figure__desc">
           На скриншоте видно, как правильно задавать отступы, — только справа и снизу (показано оранжевым)
         </figcaption>
       </figure>
@@ -94,7 +97,7 @@
 
       <figure class="article-figure">
         <img class="article-pic" src="img/4.jpg" alt="image_4">
-        <figcaption>
+        <figcaption class="article-figure__desc">
           На скриншоте — выпадение отступов. Отступ есть, но он не увеличивает размер «родителя» с голубым фоном, образуя лишний отступ — типичную ошибку вёрстки.
         </figcaption>
       </figure>
@@ -134,7 +137,7 @@
       Нам достаточно обернуть весь текст карточки в блок и задать блоку внутренний отступ — padding. Так наша вёрстка будет соответствовать сразу трём принципам. А чтобы сделать отступ между заголовком и описанием, достаточно просто сделать отступ снизу — для заголовка.
     </p>
 
-    <div class="area-fill">
+    <div class="area-fill area-fill__img--dec2">
       <h2 class="article-subtitle">Итог</h2>
 
       <p class="paragraph">
