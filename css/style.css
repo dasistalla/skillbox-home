@@ -297,24 +297,19 @@ body {
   padding-bottom: 25px;
   font-size: 40px;
   font-weight: 400;
-  font-family: Arial;
-  font-style: normal;
-  line-height: 46px;
   color: #EAEAEA;
 }
 
 .btn-loader {
+  display: block;
   margin: 0 auto;
+  padding: 0;
   width: 274px;
   height: 70px;
-  margin: 0 auto;
-  border: 2px solid #3F2AFF;
-}
-
-.btn-loader__text {
-  padding-top: 17px;
-  text-align: center;
   font-size: 18px;
   font-weight: 700;
   color: #3F2AFF;
+  background-color: transparent;
+  border: 2px solid #3F2AFF;
+  cursor: pointer;
 }
