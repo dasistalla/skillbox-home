@@ -119,7 +119,7 @@ body {
   color: #333;
 }
 
-.modules-title {
+.modules-subtitle {
   margin: 0 0 40px;
   font-weight: 700;
   font-size: 60px;
@@ -127,9 +127,8 @@ body {
   color: #3F2AFF;
 }
 
-.modules-subtitle {
-  margin: 0 0 2px 0;
-  padding-left: 25px;
+.modules-section {
+  margin: 25px 0px 2px 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
@@ -241,24 +240,43 @@ body {
 .cards__item {
   display: inline-block;
   position: relative;
-  vertical-align: middle;
+  vertical-align: top;
   width: 572px;
   height: 505px;
-  margin-right: 25px;
   margin-bottom: 25px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  padding-top: 180px;
+  padding-left: 25px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
-.cards__item:nth-child(2n) {
-  margin-right: 0;
+.cards__item:nth-child(odd) {
+  margin-right: 25px;
 }
 
 .cards__item:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
 
+.cards__item:nth-child(1) {
+  background-image: url("../img/mdl1.jpg");
+}
+
+.cards__item:nth-child(2) {
+  background-image: url("../img/mdl2.jpg");
+}
+
+.cards__item:nth-child(3) {
+  background-image: url("../img/mdl3.jpg");
+}
+
+.cards__item:nth-child(4) {
+  background-image: url("../img/mdl4.jpg");
+}
+
 .card-content__list {
-  padding-left: 25px;
+  padding-left: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 33px;
@@ -266,35 +284,10 @@ body {
   list-style-type: none;
 }
 
-.card__img {
-  padding-top: 205px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.card__img--mdl1 {
-  background-image: url("../img/mdl1.jpg");
-}
-
-.card__img--mdl2 {
-  background-image: url("../img/mdl2.jpg");
-}
-
-.card__img--mdl3 {
-  background-image: url("../img/mdl3.jpg");
-}
-
-.card__img--mdl4 {
-  background-image: url("../img/mdl4.jpg");
-}
-
 .card__number {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  right: 25px;
+  bottom: 25px;
   font-size: 40px;
   font-weight: 400;
   color: #EAEAEA;
